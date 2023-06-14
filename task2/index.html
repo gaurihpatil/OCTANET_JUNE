@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"><br>
+        <h1> To-Do List  </h1><br>
+        <form id="task-form" >
+            <div class="todo"><br>
+                <label>Task</label>
+                <input type="text" id="task-input"><br>
+                <label>Deadline </label>
+                <input type="date" id="deadline-input"><br>
+                <label> Priority</label>
+                <select id="priority-select">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                </select><br>
+                <input type="checkbox" id="urgency-checkbox">
+                <label for="urgency-checkbox">Urgent</label><br><br>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list" class="task-list"></ul>
+        </div>
+    </div>
+    <script>
+        const taskForm = document.getElementById('task-form');
+        const taskInput = document.getElementById('task-input');
+        const prioritySelect = document.getElementById('priority-select');
+        const deadlineInput = document.getElementById('deadline-input');
+        const urgencyCheckbox = document.getElementById('urgency-checkbox');
+        const taskList = document.getElementById('task-list');
+
+        taskForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const task = taskInput.value;
+            const priority = prioritySelect.value;
+            const deadline = deadlineInput.value;
+            const urgency = urgencyCheckbox.checked;
+
+            if (task) {
+                const newTask = createTaskElement(task, priority, deadline, urgency);
+                taskList.appendChild(newTask);
+                taskInput.value = '';
+                prioritySelect.value = 'low';
+                deadlineInput.value = '';
+                urgencyCheckbox.checked = false;
+            }
+        });
+
+        taskList.addEventListener('click', function(e) {
+            if (e.target.classList.contains('delete-btn')) {
+                const taskItem = e.target.parentElement;
+                taskItem.remove();
+            } 
+        });
+        function createTaskElement(task, priority, deadline, urgency) {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                <div class="task-info">
+                    <input type="checkbox" class="complete-checkbox">
+                    <span>${task}</span><br>
+                    <span class="deadline">Deadline : ${deadline}</span><br>
+                    <span class="priority">Priority : ${priority}</span><br>
+                    ${urgency ? '<span class="urgency">Urgent</span>' : ''}<br>
+                </div>
+                <div class="delete-btn">X</div>
+            `;
+            return listItem;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

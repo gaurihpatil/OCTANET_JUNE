@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url(background.png);
+    margin-left: 2px;
+    background-size: cover;
+    font-size: 20px;
+    text-align: center; 
+}
+
+.container h1{
+    color: #6F4E37;
+    margin-left: -370px;
+}
+
+.todo{
+    width: 40%;
+    height: 40%;
+    background:#EADDCA;
+    margin: 8px 270px;
+    border-radius: 10px;
+}
+
+label{
+    width: 100px;
+    display: inline-block;
+}
+
+input[type=text],[type=date],select {
+    width: 50%;
+    height: 10%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.todo button{
+    padding: 16px 50px;
+    background:#6F4E37;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.task-list {
+    background-color: rgb(245, 245, 245);
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    text-align: left;
+    margin-left: 80px ;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.task-list li .task-info {
+    flex: 1;
+}
+
+.task-list li .task-info span {
+    font-weight: bold;
+}
+
+.task-list li .task-info .deadline {
+    color: #A52A2A;
+}
+
+.task-list li .task-info .priority {
+    color: #CC7722;
+}
+
+.task-list li .task-info .urgency {
+    color: rgb(79, 42, 28);
+}
+
+.task-list li .delete-btn {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+
