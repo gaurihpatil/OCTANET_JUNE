@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Clone</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/fcf1bf14d2.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+   </head>
+<body>
+    <nav class="flex">
+        <div class="nav-left">
+            <img src="images/YouTube.png">
+        </div>
+        <div class="nav-container">
+            <div class="search_wrap ">
+                <div class="search_box">
+                    <input type="text" class="input" placeholder="Search">
+                    <div class="btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="mic">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right flex">
+            <i class="ri-video-add-line"></i>
+            <i class="ri-notification-4-line"></i>
+            <div class="profile">
+                <img src="images/Jack.png" class="user-icon">
+            </div>
+        </div>
+    </nav>
+    <div class="body-container">
+        <div class="sidebar">
+            <div class="sidebar-items">
+                <a class="sidebar-item links active"><i class="ri-home-4-fill"></i>Home</a>
+                <a href="#" class="links" ><img src="images/shorts.png"> Shorts</a>
+                <a class="sidebar-item"><i class="ri-tv-2-line"></i>Subscriptions</a>
+                <hr class="seperator">
+                <a class="sidebar-item"><i class="ri-movie-line"></i>Library</a>
+                <a class="sidebar-item"><i class="ri-history-line"></i>History</a>
+                <a class="sidebar-item"><i class="ri-time-line"></i>Watch later</a>
+                <a class="sidebar-item"><i class="ri-thumb-up-line"></i>Liked videos</a>
+                <hr><br>
+                <p>Explore</p>
+                <a class="sidebar-item"><i class="ri-fire-line"></i>Trending</a>
+                <a class="sidebar-item"><i class="ri-shopping-bag-line"></i>Shopping</a>
+                <a class="sidebar-item"><i class="ri-music-line"></i>Music</a>
+                <a class="sidebar-item"> <i class="ri-clapperboard-fill"></i>Films</a>
+                <a class="sidebar-item"><i class="ri-wireless-charging-line"></i>Live</a>
+                <a class="sidebar-item"><i class="ri-discord-line"></i>Gaming</a>
+                <a class="sidebar-item"><i class="ri-trophy-line"></i>Sport</a>
+                <a class="sidebar-item"><i class="ri-lightbulb-line"></i>Learning</a>
+                <a href="#" class="links" ><img src="images/fashion.png">Fashion & beauty</a><br>
+                <hr class="seperator"><br>
+                <p>More From YouTube</p>
+                <a href="#" class="links" ><img src="https://img.icons8.com/?size=512&id=9a46bTk3awwI&format=png">YouTube Premium</a>
+                <a href="#" class="links" ><img src="images/youtubemusic.png">YouTube Music</a>
+                <a href="#" class="links" ><img src="images/YouTubekids.png">YouTube Kids</a>
+                <hr>
+                <a class="sidebar-item"><i class="ri-settings-3-line"></i>Settings</a>
+                <a class="sidebar-item"><i class="ri-flag-line"></i>Report history</a>
+                <a class="sidebar-item"><i class="ri-question-line"></i>Help</a>
+                <a class="sidebar-item"><i class="ri-feedback-line"></i>Send feedback</a>
+            </div>
+        </div>
+    </div>
+
+
+<div class="filters">
+    <button class="filter-options active">All</button>
+    <button class="filter-options ">New to you</button>
+    <button class="filter-options">Recently Uploaded</button>
+    <button class="filter-options">Live</button>
+    <button class="filter-options">Music</button>
+    <button class="filter-options">Daily vloging</button>
+    <button class="filter-options">Comedy</button>    
+    <button class="filter-options">K-Pop</button>
+    <button class="filter-options">Computer Programming</button>
+    <button class="filter-options">Gaming</button>
+    <button class="filter-options">Guitar</button>
+    <button class="filter-options">News</button>
+    <button class="filter-options ">Mixes</button>
+</div>
+
+
+    <div class="container">
+        <div class="banner">
+            <img src="images/banner.png">
+        </div>
+        <div class="list-container">
+
+            <div class="vid-list">
+                <a href="play-video.html"> <img src="images/1.png" class="thumbnail"></a>
+                <div class="flex-div">
+                    <img src="images/Jack.png">
+                    <div class="vid-info">
+                        <h5>Sharing unforgettable travel moments and inspiring wanderlust worldwide!</h3>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vid-list">
+                    <a href=""> <img src="images/2.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person2.jpg">
+                        <div class="vid-info">
+                            <h5>Every story has multiple angles-let's embrace different points of view and uncover the full picture.</h5>
+                            <p>Easy Tutorials</p>
+                            <p>5k views &bull; 1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vid-list">
+                    <a href=""> <img src="images/3.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/cameron.png">
+                        <div class="vid-info">
+                            <h5>Embark on a melodic journey through various genres, from classics to the latest hits</h5>
+                            <p>Daily Music</p>
+                            <p>15M views &bull; 20 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vid-list">
+                    <a href=""> <img src="images/4.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/gerard.png">
+                        <div class="vid-info">
+                            <h5>Symphony of sounds and experience the transformative power of music</h5>
+                            <p>Easy Tutorials</p>
+                            <p>1k views &bull; 5 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/5.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/megan.png">
+                        <div class="vid-info">
+                            <h5>Inhale tranquility, exhale stress. Embrace the serenity that meditation brings</h5>
+                            <p>Easy Tutorials</p>
+                            <p>150k views &bull; 20 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/6.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person3..jpg">
+                        <div class="vid-info">
+                            <h5>Unlock the hidden stories behind your favorite songs </h5>
+                            <p>Daily Music</p>
+                            <p>5k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/7.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/simon.png">
+                        <div class="vid-info">
+                            <h5>Food is the universal language of love</h5>
+                            <p>Food</p>
+                            <p>78k views &bull; 23 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/8.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/tom.png">
+                        <div class="vid-info">
+                            <h5>Q and A</h5>
+                            <p>Vlogs</p>
+                            <p>105k views &bull; 20 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+<!--Shrots-->
+                <div class="container ">
+                    <div class="play-video">
+                        <video controls loop>
+                            <source src="images/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="container ">
+                    <div class="play-video">
+                        <video controls loop>
+                            <source src="images/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="container ">
+                    <div class="play-video">
+                        <video controls loop>
+                            <source src="images/video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="play-video">
+                        <video controls loop>
+                            <source src="images/video4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href="play-video.html"> <img src="images/9.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/Jack.png">
+                        <div class="vid-info">
+                            <h5>Sweat, strength, and gains - it's time to dominate the gym!</h5>
+                            <p>Gym Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/10.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person2.jpg">
+                        <div class="vid-info">
+                            <h5>Seeing the world through a different lens</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/11.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/cameron.png">
+                        <div class="vid-info">
+                            <h5>Finding Peace</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/12.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/gerard.png">
+                        <div class="vid-info">
+                            <h5>Expand your knowledge with mind-blowing facts that will leave you amazed</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href="play-video.html"> <img src="images/13.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/Jack.png">
+                        <div class="vid-info">
+                            <h5>Interiors</h5>
+                            <p>Design</p>
+                            <p>10k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/14.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person2.jpg">
+                        <div class="vid-info">
+                            <h5>Venturing into the unknown, where every corner holds a new adventure!</h5>
+                            <p>Travel Tutorials</p>
+                            <p>185k views &bull; 9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/15.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/cameron.png">
+                        <div class="vid-info">
+                            <h5>Finding my skin's happy place: a skincare journey customized just for me</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/16.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/gerard.png">
+                        <div class="vid-info">
+                            <h5>Wandering where dreams meet reality.</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/17.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/megan.png">
+                        <div class="vid-info">
+                            <h5>Fitness is a lifestyle, not a destination. Join me as we embrace the journey</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/18.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person3..jpg">
+                        <div class="vid-info">
+                            <h5>Pampering my skin with love and care</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/19.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/simon.png">
+                        <div class="vid-info">
+                            <h5>Seeing the world through a different lens</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/20.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/tom.png">
+                        <div class="vid-info">
+                            <h5>A glimpse into my world:</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/21.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/jack.png">
+                        <div class="vid-info">
+                            <h5>Let the rhythm guide you</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="vid-list">
+                    <a href=""> <img src="images/22.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person2.jpg">
+                        <div class="vid-info">
+                            <h5>From skincare essentials to luxurious treatments</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/23.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/cameron.png">
+                        <div class="vid-info">
+                            <h5>Feast your eyes on this culinary masterpiece. Can you resist the temptation?</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/24.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/gerard.png">
+                        <div class="vid-info">
+                            <h5>Witnessing nature's: a visual feast for the wanderlust soul.</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/5.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/megan.png">
+                        <div class="vid-info">
+                            <h5>Inhale tranquility, exhale stress. Embrace the serenity that meditation brings</h5>
+                            <p>Easy Tutorials</p>
+                            <p>150k views &bull; 20 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/6.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person3..jpg">
+                        <div class="vid-info">
+                            <h5>Unlock the hidden stories behind your favorite songs </h5>
+                            <p>Daily Music</p>
+                            <p>5k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/7.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/simon.png">
+                        <div class="vid-info">
+                            <h5>Food is the universal language of love</h5>
+                            <p>Food</p>
+                            <p>78k views &bull; 23 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/8.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/tom.png">
+                        <div class="vid-info">
+                            <h5>Q and A</h5>
+                            <p>Vlogs</p>
+                            <p>105k views &bull; 20 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vid-list">
+                    <a href="play-video.html"> <img src="images/9.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/Jack.png">
+                        <div class="vid-info">
+                            <h5>Sweat, strength, and gains - it's time to dominate the gym!</h5>
+                            <p>Gym Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vid-list">
+                    <a href=""> <img src="images/10.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person2.jpg">
+                        <div class="vid-info">
+                            <h5>Seeing the world through a different lens</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/11.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/cameron.png">
+                        <div class="vid-info">
+                            <h5>Finding Peace</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/12.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/gerard.png">
+                        <div class="vid-info">
+                            <h5>Expand your knowledge with mind-blowing facts that will leave you amazed</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href="play-video.html"> <img src="images/13.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/Jack.png">
+                        <div class="vid-info">
+                            <h5>Interiors</h5>
+                            <p>Design</p>
+                            <p>10k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/14.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person2.jpg">
+                        <div class="vid-info">
+                            <h5>Venturing into the unknown, where every corner holds a new adventure!</h5>
+                            <p>Travel Tutorials</p>
+                            <p>185k views &bull; 9 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/15.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/cameron.png">
+                        <div class="vid-info">
+                            <h5>Finding my skin's happy place: a skincare journey customized just for me</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/16.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/gerard.png">
+                        <div class="vid-info">
+                            <h5>Wandering where dreams meet reality.</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/17.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/megan.png">
+                        <div class="vid-info">
+                            <h5>Fitness is a lifestyle, not a destination. Join me as we embrace the journey</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href=""> <img src="images/18.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/person3..jpg">
+                        <div class="vid-info">
+                            <h5>Pampering my skin with love and care</h5>
+                            <p>Easy Tutorials</p>
+                            <p>15k views &bull; 2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vid-list">
+                    <a href="play-video.html"> <img src="images/1.png" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="images/Jack.png">
+                        <div class="vid-info">
+                            <h5>Sharing unforgettable travel moments and inspiring wanderlust worldwide!</h3>
+                                <p>Easy Tutorials</p>
+                                <p>15k views &bull; 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="vid-list">
+                        <a href=""> <img src="images/2.png" class="thumbnail"></a>
+                        <div class="flex-div">
+                            <img src="images/person2.jpg">
+                            <div class="vid-info">
+                                <h5>Every story has multiple angles-let's embrace different points of view and uncover the full picture.</h5>
+                                <p>Easy Tutorials</p>
+                                <p>5k views &bull; 1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
